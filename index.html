@@ -11,6 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Yatra+One&display=swap" rel="stylesheet">
 
 <style>
+
 :root{
     --blue:#063b78;
     --dark:#052957;
@@ -49,7 +50,9 @@ a{
     margin:auto;
 }
 
-/* HEADER */
+
+/* ================= HEADER ================= */
+
 header{
     background:var(--white);
     position:sticky;
@@ -121,7 +124,9 @@ header{
     font-weight:700;
 }
 
-/* HERO */
+
+/* ================= HERO ================= */
+
 .hero{
     background:linear-gradient(135deg,var(--dark),var(--blue));
     color:white;
@@ -204,7 +209,9 @@ header{
     box-shadow:0 10px 35px rgba(0,0,0,.35);
 }
 
-/* SECTION */
+
+/* ================= SECTION ================= */
+
 section{
     padding:55px 0;
 }
@@ -224,7 +231,9 @@ section{
     color:#666;
 }
 
-/* SERVICES */
+
+/* ================= SERVICES ================= */
+
 .services{
     background:white;
 }
@@ -272,7 +281,9 @@ section{
     font-size:.85rem;
 }
 
-/* ABOUT */
+
+/* ================= ABOUT ================= */
+
 .about{
     background:linear-gradient(180deg,#f5f8fc,#fff);
 }
@@ -314,7 +325,9 @@ section{
     font-weight:700;
 }
 
-/* SCHEMES */
+
+/* ================= SCHEMES ================= */
+
 .scheme-grid{
     display:grid;
     grid-template-columns:repeat(3,1fr);
@@ -338,7 +351,9 @@ section{
     font-size:.88rem;
 }
 
-/* PAYMENT */
+
+/* ================= PAYMENT ================= */
+
 .payment{
     background:var(--dark);
     color:white;
@@ -373,19 +388,19 @@ section{
     text-align:center;
 }
 
-.qr-placeholder{
+.qr-box img{
     width:230px;
     height:230px;
-    margin:auto;
+    object-fit:contain;
     background:white;
-    color:#333;
+    padding:8px;
     border-radius:12px;
-    display:grid;
-    place-items:center;
-    font-weight:700;
+    box-shadow:0 5px 20px rgba(0,0,0,.2);
 }
 
-/* CONTACT */
+
+/* ================= CONTACT ================= */
+
 .contact{
     background:white;
 }
@@ -430,7 +445,9 @@ section{
     font-weight:700;
 }
 
-/* FOOTER */
+
+/* ================= FOOTER ================= */
+
 footer{
     background:#031d40;
     color:white;
@@ -462,12 +479,16 @@ footer p{
     font-size:.82rem;
 }
 
-/* MOBILE BAR */
+
+/* ================= MOBILE BAR ================= */
+
 .mobile-bar{
     display:none;
 }
 
-/* RESPONSIVE */
+
+/* ================= RESPONSIVE ================= */
+
 @media(max-width:800px){
 
     .nav-links{
@@ -546,6 +567,7 @@ footer p{
     }
 }
 
+
 @media(max-width:480px){
 
     .container{
@@ -581,375 +603,752 @@ footer p{
     .hero h2{
         font-size:1.75rem;
     }
+
+    .qr-box img{
+        width:220px;
+        height:220px;
+    }
 }
+
 </style>
 </head>
 
+
 <body>
 
-<!-- HEADER -->
+
+<!-- ================= HEADER ================= -->
+
 <header>
-    <div class="container navbar">
 
-        <a href="#" class="brand">
-            <div class="logo-icon">
-                <img src="Logo.png" alt="Shree Balaji e-Mitra Center">
-            </div>
+<div class="container navbar">
 
-            <div class="brand-text">
-                <h1>Shree Balaji e-Mitra Center</h1>
-                <span>Ankit Dangi &nbsp;|&nbsp; OP Dangi</span>
-            </div>
-        </a>
+<a href="#home" class="brand">
 
-        <nav class="nav-links">
-            <a href="#home">Home</a>
-            <a href="#services">Services</a>
-            <a href="#schemes">Schemes</a>
-            <a href="#contact">Contact</a>
-            <a class="call-btn" href="tel:8690653797">Call Now</a>
-        </nav>
+<div class="logo-icon">
+<img src="Logo.png" alt="Shree Balaji e-Mitra Center">
+</div>
 
-    </div>
+<div class="brand-text">
+
+<h1>Shree Balaji e-Mitra Center</h1>
+
+<span>
+Ankit Dangi &nbsp;|&nbsp; OP Dangi
+</span>
+
+</div>
+
+</a>
+
+
+<nav class="nav-links">
+
+<a href="#home">Home</a>
+
+<a href="#services">Services</a>
+
+<a href="#schemes">Schemes</a>
+
+<a href="#payment">Payment</a>
+
+<a href="#contact">Contact</a>
+
+<a class="call-btn" href="tel:8690653797">
+Call Now
+</a>
+
+</nav>
+
+</div>
+
 </header>
 
 
-<!-- HERO -->
+
+<!-- ================= HERO ================= -->
+
 <section class="hero" id="home">
-    <div class="container hero-content">
 
-        <div>
-            <span class="badge">आपकी सेवा, हमारा संकल्प 🙏</span>
+<div class="container hero-content">
 
-            <h2>
-                Shree Balaji
-                <span>e-Mitra Center</span>
-            </h2>
 
-            <p>
-                सभी सरकारी एवं डिजिटल सेवाएं एक ही स्थान पर।
-                दस्तावेज, ऑनलाइन फॉर्म, बिल भुगतान, रिचार्ज,
-                बैंकिंग एवं अन्य सेवाओं के लिए संपर्क करें।
-            </p>
+<div>
 
-            <div class="hero-buttons">
-                <a class="btn btn-primary" href="tel:8690653797">
-                    📞 Ankit Dangi
-                </a>
+<span class="badge">
+🙏 आपकी सेवा, हमारा संकल्प
+</span>
 
-                <a class="btn btn-whatsapp"
-                   href="https://wa.me/918690653797"
-                   target="_blank">
-                    💬 WhatsApp
-                </a>
 
-                <a class="btn btn-outline"
-                   href="tel:9358276393">
-                    📞 OP Dangi
-                </a>
-            </div>
-        </div>
+<h2>
 
-        <div class="hero-logo">
-            <img src="Logo.png" alt="Shree Balaji e-Mitra Center Logo">
-        </div>
+Shree Balaji
 
-    </div>
+<span>e-Mitra Center</span>
+
+</h2>
+
+
+<p>
+
+सभी सरकारी एवं डिजिटल सेवाएं एक ही स्थान पर।
+दस्तावेज, ऑनलाइन फॉर्म, बिल भुगतान, रिचार्ज,
+बैंकिंग एवं अन्य सेवाओं के लिए संपर्क करें।
+
+</p>
+
+
+<div class="hero-buttons">
+
+
+<a class="btn btn-primary"
+href="tel:8690653797">
+
+📞 Ankit Dangi
+
+</a>
+
+
+<a class="btn btn-whatsapp"
+href="https://wa.me/918690653797"
+target="_blank">
+
+💬 WhatsApp
+
+</a>
+
+
+<a class="btn btn-outline"
+href="tel:9358276393">
+
+📞 OP Dangi
+
+</a>
+
+
+</div>
+
+</div>
+
+
+
+<div class="hero-logo">
+
+<img src="Logo.png"
+alt="Shree Balaji e-Mitra Center Logo">
+
+</div>
+
+
+</div>
+
 </section>
 
 
-<!-- SERVICES -->
+
+<!-- ================= SERVICES ================= -->
+
 <section class="services" id="services">
-    <div class="container">
 
-        <div class="section-title">
-            <h2>हमारी सेवाएं</h2>
-            <p>आपके रोजमर्रा के जरूरी ऑनलाइन काम एक ही जगह</p>
-        </div>
+<div class="container">
 
-        <div class="service-grid">
 
-            <div class="service-card">
-                <div class="icon">📄</div>
-                <h3>Document Services</h3>
-                <p>प्रिंट, स्कैन, फोटो कॉपी, PDF एवं दस्तावेज संबंधी कार्य।</p>
-            </div>
+<div class="section-title">
 
-            <div class="service-card">
-                <div class="icon">🏛️</div>
-                <h3>Government Services</h3>
-                <p>सरकारी योजनाओं एवं ऑनलाइन आवेदन की सुविधा।</p>
-            </div>
+<h2>हमारी सेवाएं</h2>
 
-            <div class="service-card">
-                <div class="icon">🖨️</div>
-                <h3>Print & Scan</h3>
-                <p>कलर प्रिंट, ब्लैक एंड व्हाइट प्रिंट और स्कैनिंग।</p>
-            </div>
+<p>
+आपके रोजमर्रा के जरूरी ऑनलाइन काम एक ही जगह
+</p>
 
-            <div class="service-card">
-                <div class="icon">📱</div>
-                <h3>Recharge & Bills</h3>
-                <p>मोबाइल, DTH, बिजली एवं अन्य बिल भुगतान।</p>
-            </div>
+</div>
 
-            <div class="service-card">
-                <div class="icon">₹</div>
-                <h3>Banking Services</h3>
-                <p>उपलब्ध बैंकिंग एवं डिजिटल भुगतान सेवाएं।</p>
-            </div>
 
-            <div class="service-card">
-                <div class="icon">👥</div>
-                <h3>Other Services</h3>
-                <p>ऑनलाइन फॉर्म एवं अन्य डिजिटल सेवाओं के लिए संपर्क करें।</p>
-            </div>
 
-        </div>
-    </div>
+<div class="service-grid">
+
+
+<div class="service-card">
+
+<div class="icon">📄</div>
+
+<h3>Document Services</h3>
+
+<p>
+प्रिंट, स्कैन, फोटो कॉपी, PDF एवं दस्तावेज संबंधी कार्य।
+</p>
+
+</div>
+
+
+
+<div class="service-card">
+
+<div class="icon">🏛️</div>
+
+<h3>Government Services</h3>
+
+<p>
+सरकारी योजनाओं एवं ऑनलाइन आवेदन की सुविधा।
+</p>
+
+</div>
+
+
+
+<div class="service-card">
+
+<div class="icon">🖨️</div>
+
+<h3>Print & Scan</h3>
+
+<p>
+कलर प्रिंट, ब्लैक एंड व्हाइट प्रिंट और स्कैनिंग।
+</p>
+
+</div>
+
+
+
+<div class="service-card">
+
+<div class="icon">📱</div>
+
+<h3>Recharge & Bills</h3>
+
+<p>
+मोबाइल, DTH, बिजली एवं अन्य बिल भुगतान।
+</p>
+
+</div>
+
+
+
+<div class="service-card">
+
+<div class="icon">₹</div>
+
+<h3>Banking Services</h3>
+
+<p>
+उपलब्ध बैंकिंग एवं डिजिटल भुगतान सेवाएं।
+</p>
+
+</div>
+
+
+
+<div class="service-card">
+
+<div class="icon">👥</div>
+
+<h3>Other Services</h3>
+
+<p>
+ऑनलाइन फॉर्म एवं अन्य डिजिटल सेवाओं के लिए संपर्क करें।
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
 </section>
 
 
-<!-- ABOUT -->
+
+<!-- ================= ABOUT ================= -->
+
 <section class="about">
-    <div class="container">
 
-        <div class="section-title">
-            <h2>हमारे बारे में</h2>
-            <p>Shree Balaji e-Mitra Center</p>
-        </div>
+<div class="container">
 
-        <div class="about-box">
 
-            <div>
-                <h3>विश्वसनीय डिजिटल सेवा केंद्र</h3>
+<div class="section-title">
 
-                <p>
-                    Shree Balaji e-Mitra Center पर आपको विभिन्न
-                    ऑनलाइन, सरकारी और डिजिटल सेवाएं आसानी से
-                    उपलब्ध कराने का प्रयास किया जाता है।
-                </p>
+<h2>हमारे बारे में</h2>
 
-                <p>
-                    किसी भी सेवा की जानकारी या आवेदन के लिए
-                    पहले फोन करके जानकारी प्राप्त कर सकते हैं।
-                </p>
-            </div>
+<p>
+Shree Balaji e-Mitra Center
+</p>
 
-            <div>
+</div>
 
-                <h3>संपर्क व्यक्ति</h3>
 
-                <div class="owner">
-                    <strong>Ankit Dangi</strong><br>
-                    📞 <span class="number">8690653797</span>
-                </div>
 
-                <div class="owner">
-                    <strong>OP Dangi</strong><br>
-                    📞 <span class="number">9358276393</span>
-                </div>
+<div class="about-box">
 
-            </div>
 
-        </div>
-    </div>
+<div>
+
+<h3>
+विश्वसनीय डिजिटल सेवा केंद्र
+</h3>
+
+
+<p>
+
+Shree Balaji e-Mitra Center पर आपको विभिन्न
+ऑनलाइन, सरकारी और डिजिटल सेवाएं आसानी से
+उपलब्ध कराने का प्रयास किया जाता है।
+
+</p>
+
+
+<p>
+
+किसी भी सेवा की जानकारी या आवेदन के लिए
+पहले फोन करके जानकारी प्राप्त कर सकते हैं।
+
+</p>
+
+</div>
+
+
+
+<div>
+
+<h3>
+संपर्क व्यक्ति
+</h3>
+
+
+<div class="owner">
+
+<strong>
+Ankit Dangi
+</strong>
+
+<br>
+
+📞
+
+<span class="number">
+8690653797
+</span>
+
+</div>
+
+
+
+<div class="owner">
+
+<strong>
+OP Dangi
+</strong>
+
+<br>
+
+📞
+
+<span class="number">
+9358276393
+</span>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+</div>
+
 </section>
 
 
-<!-- SCHEMES -->
+
+<!-- ================= SCHEMES ================= -->
+
 <section id="schemes">
-    <div class="container">
 
-        <div class="section-title">
-            <h2>सरकारी योजनाएं</h2>
-            <p>विभिन्न सरकारी योजनाओं के ऑनलाइन कार्यों में सहायता</p>
-        </div>
+<div class="container">
 
-        <div class="scheme-grid">
 
-            <div class="scheme">
-                <h3>📚 छात्र योजनाएं</h3>
-                <p>
-                    छात्रवृत्ति एवं शिक्षा से संबंधित ऑनलाइन
-                    आवेदन में सहायता।
-                </p>
-            </div>
+<div class="section-title">
 
-            <div class="scheme">
-                <h3>👨‍🌾 किसान योजनाएं</h3>
-                <p>
-                    किसानों से संबंधित उपलब्ध ऑनलाइन सेवाओं
-                    एवं योजनाओं में सहायता।
-                </p>
-            </div>
+<h2>
+सरकारी योजनाएं
+</h2>
 
-            <div class="scheme">
-                <h3>🏠 सामाजिक योजनाएं</h3>
-                <p>
-                    पात्रता के अनुसार विभिन्न सरकारी योजनाओं
-                    के आवेदन में सहायता।
-                </p>
-            </div>
+<p>
+विभिन्न सरकारी योजनाओं के ऑनलाइन कार्यों में सहायता
+</p>
 
-        </div>
-    </div>
+</div>
+
+
+
+<div class="scheme-grid">
+
+
+<div class="scheme">
+
+<h3>
+📚 छात्र योजनाएं
+</h3>
+
+<p>
+
+छात्रवृत्ति एवं शिक्षा से संबंधित ऑनलाइन
+आवेदन में सहायता।
+
+</p>
+
+</div>
+
+
+
+<div class="scheme">
+
+<h3>
+👨‍🌾 किसान योजनाएं
+</h3>
+
+<p>
+
+किसानों से संबंधित उपलब्ध ऑनलाइन सेवाओं
+एवं योजनाओं में सहायता।
+
+</p>
+
+</div>
+
+
+
+<div class="scheme">
+
+<h3>
+🏠 सामाजिक योजनाएं
+</h3>
+
+<p>
+
+पात्रता के अनुसार विभिन्न सरकारी योजनाओं
+के आवेदन में सहायता।
+
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
 </section>
 
 
-<!-- PAYMENT -->
-<section class="payment">
-    <div class="container payment-box">
 
-        <div>
-            <h2>💳 Online Payment</h2>
+<!-- ================= PAYMENT ================= -->
 
-            <p>
-                सेवा शुल्क या अन्य भुगतान के लिए नीचे दिए गए
-                UPI ID का उपयोग कर सकते हैं।
-            </p>
+<section class="payment" id="payment">
 
-            <div class="upi">
-                UPI ID: <strong>ankitdangi17@icici</strong>
-            </div>
-        </div>
+<div class="container payment-box">
 
-        <div class="qr-box">
-            <div class="qr-placeholder">
-                अपना QR Code यहाँ लगाएं
-            </div>
-        </div>
 
-    </div>
+<div>
+
+<h2>
+💳 Online Payment
+</h2>
+
+
+<p>
+
+सेवा शुल्क या अन्य भुगतान के लिए नीचे दिए गए
+UPI QR Code या UPI ID का उपयोग कर सकते हैं।
+
+</p>
+
+
+<div class="upi">
+
+UPI ID:
+
+<strong>
+ankitdangi17@icici
+</strong>
+
+</div>
+
+</div>
+
+
+
+<div class="qr-box">
+
+<img src="QR.png"
+alt="Ankit Dangi UPI QR Code">
+
+<p style="margin-top:10px;">
+Scan करके Payment करें
+</p>
+
+</div>
+
+
+</div>
+
 </section>
 
 
-<!-- CONTACT -->
+
+<!-- ================= CONTACT ================= -->
+
 <section class="contact" id="contact">
-    <div class="container">
 
-        <div class="section-title">
-            <h2>संपर्क करें</h2>
-            <p>किसी भी सेवा की जानकारी के लिए कॉल या WhatsApp करें</p>
-        </div>
-
-        <div class="contact-grid">
-
-            <div class="contact-card">
-
-                <h3>📞 Contact Numbers</h3>
-
-                <div class="contact-person">
-                    <div>
-                        <div class="person-name">Ankit Dangi</div>
-                        <div class="person-number">8690653797</div>
-                    </div>
-
-                    <a class="btn btn-primary"
-                       href="tel:8690653797">
-                        Call
-                    </a>
-                </div>
-
-                <div class="contact-person">
-                    <div>
-                        <div class="person-name">OP Dangi</div>
-                        <div class="person-number">9358276393</div>
-                    </div>
-
-                    <a class="btn btn-primary"
-                       href="tel:9358276393">
-                        Call
-                    </a>
-                </div>
-
-            </div>
+<div class="container">
 
 
-            <div class="contact-card">
+<div class="section-title">
 
-                <h3>💬 WhatsApp</h3>
+<h2>
+संपर्क करें
+</h2>
 
-                <p>
-                    ऑनलाइन सेवा या किसी भी जानकारी के लिए
-                    WhatsApp पर संपर्क करें।
-                </p>
+<p>
+किसी भी सेवा की जानकारी के लिए कॉल या WhatsApp करें
+</p>
 
-                <br>
+</div>
 
-                <a class="btn btn-whatsapp"
-                   href="https://wa.me/918690653797"
-                   target="_blank">
-                    WhatsApp Ankit Dangi
-                </a>
 
-                <br><br>
 
-                <a class="btn btn-whatsapp"
-                   href="https://wa.me/919358276393"
-                   target="_blank">
-                    WhatsApp OP Dangi
-                </a>
+<div class="contact-grid">
 
-            </div>
 
-        </div>
-    </div>
+<!-- CONTACT NUMBERS -->
+
+<div class="contact-card">
+
+<h3>
+📞 Contact Numbers
+</h3>
+
+
+<div class="contact-person">
+
+
+<div>
+
+<div class="person-name">
+Ankit Dangi
+</div>
+
+<div class="person-number">
+8690653797
+</div>
+
+</div>
+
+
+<a class="btn btn-primary"
+href="tel:8690653797">
+
+Call
+
+</a>
+
+
+</div>
+
+
+
+<div class="contact-person">
+
+
+<div>
+
+<div class="person-name">
+OP Dangi
+</div>
+
+<div class="person-number">
+9358276393
+</div>
+
+</div>
+
+
+<a class="btn btn-primary"
+href="tel:9358276393">
+
+Call
+
+</a>
+
+
+</div>
+
+
+</div>
+
+
+
+<!-- WHATSAPP -->
+
+<div class="contact-card">
+
+<h3>
+💬 WhatsApp
+</h3>
+
+
+<p>
+
+ऑनलाइन सेवा या किसी भी जानकारी के लिए
+WhatsApp पर संपर्क करें।
+
+</p>
+
+
+<br>
+
+
+<a class="btn btn-whatsapp"
+href="https://wa.me/918690653797"
+target="_blank">
+
+WhatsApp Ankit Dangi
+
+</a>
+
+
+<br><br>
+
+
+<a class="btn btn-whatsapp"
+href="https://wa.me/919358276393"
+target="_blank">
+
+WhatsApp OP Dangi
+
+</a>
+
+
+</div>
+
+
+</div>
+
+</div>
+
 </section>
 
 
-<!-- FOOTER -->
+
+<!-- ================= FOOTER ================= -->
+
 <footer>
-    <div class="container">
 
-        <div class="footer-content">
+<div class="container">
 
-            <div>
-                <h3>Shree Balaji e-Mitra Center</h3>
-                <p>
-                    आपकी सेवा, हमारा संकल्प 🙏
-                </p>
-                <p>
-                    Sakhthali Khurd, Rajasthan - 312615
-                </p>
-            </div>
 
-            <div>
-                <h3>Contact</h3>
-                <p>Ankit Dangi: 8690653797</p>
-                <p>OP Dangi: 9358276393</p>
-            </div>
+<div class="footer-content">
 
-            <div>
-                <h3>UPI</h3>
-                <p>ankitdangi17@icici</p>
-                <p>Online Payment Available</p>
-            </div>
 
-        </div>
+<div>
 
-        <div class="footer-bottom">
-            © 2026 Shree Balaji e-Mitra Center | Ankit Dangi & OP Dangi
-        </div>
+<h3>
+Shree Balaji e-Mitra Center
+</h3>
 
-    </div>
+<p>
+🙏 आपकी सेवा, हमारा संकल्प
+</p>
+
+<p>
+Sakhthali Khurd, Rajasthan - 312615
+</p>
+
+</div>
+
+
+
+<div>
+
+<h3>
+Contact
+</h3>
+
+<p>
+Ankit Dangi: 8690653797
+</p>
+
+<p>
+OP Dangi: 9358276393
+</p>
+
+</div>
+
+
+
+<div>
+
+<h3>
+UPI Payment
+</h3>
+
+<p>
+ankitdangi17@icici
+</p>
+
+<p>
+Scan QR Code & Pay
+</p>
+
+</div>
+
+
+</div>
+
+
+
+<div class="footer-bottom">
+
+© 2026 Shree Balaji e-Mitra Center
+
+<br>
+
+Ankit Dangi &nbsp;|&nbsp; OP Dangi
+
+</div>
+
+
+</div>
+
 </footer>
 
 
-<!-- MOBILE BAR -->
+
+<!-- ================= MOBILE BAR ================= -->
+
 <div class="mobile-bar">
 
-    <a class="mobile-call" href="tel:8690653797">
-        📞 Call Ankit
-    </a>
 
-    <a class="mobile-wa"
-       href="https://wa.me/918690653797"
-       target="_blank">
-        💬 WhatsApp
-    </a>
+<a class="mobile-call"
+href="tel:8690653797">
+
+📞 Call Ankit
+
+</a>
+
+
+<a class="mobile-wa"
+href="https://wa.me/918690653797"
+target="_blank">
+
+💬 WhatsApp
+
+</a>
+
 
 </div>
+
 
 </body>
 </html>
